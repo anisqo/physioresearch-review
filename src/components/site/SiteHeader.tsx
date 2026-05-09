@@ -16,23 +16,23 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/10 bg-white">
-      <div className="site-shell flex h-[136px] items-center justify-between">
+      <div className="site-shell flex h-[84px] items-center justify-between md:h-[104px] lg:h-[136px]">
         <a
           href="/"
-          className="group flex shrink-0 items-center gap-3"
+          className="group flex max-w-[calc(100%-96px)] min-w-0 flex-1 items-center gap-2 sm:max-w-none md:gap-3"
           aria-label="Physio Research Review — strona główna"
         >
           <img
             src="/brand/logo1.svg"
             alt="PhysioResearchReview"
-            className="h-[7.5rem] w-auto shrink-0"
+            className="h-[50px] w-auto shrink-0 md:h-[78px] lg:h-[120px]"
           />
 
-          <span
-            className="whitespace-nowrap text-[15px] font-semibold tracking-[0.08em] text-black transition-colors"
-          >
-            Physio Research Review
-          </span>
+          <div className="hidden min-w-0 min-[480px]:block">
+            <span className="block truncate text-[11px] font-semibold tracking-[0.06em] text-black transition-colors sm:text-[12px] md:text-[14px] lg:text-[15px] lg:tracking-[0.08em]">
+              Physio Research Review
+            </span>
+          </div>
         </a>
 
         <nav className="hidden items-center gap-7 lg:flex">
@@ -60,7 +60,7 @@ export function SiteHeader() {
         <button
           type="button"
           onClick={() => setMobileOpen((value) => !value)}
-          className="border border-black/15 px-4 py-2 text-[12px] uppercase tracking-[0.22em] text-neutral-800 transition-colors hover:border-[#006B54] hover:text-[#006B54] lg:hidden"
+          className="ml-2 min-w-[88px] shrink-0 border border-black/15 px-2.5 py-2 text-center text-[10px] uppercase tracking-[0.16em] text-neutral-800 transition-colors hover:border-[#006B54] hover:text-[#006B54] sm:ml-3 sm:px-4 sm:text-[12px] sm:tracking-[0.22em] lg:hidden"
           aria-expanded={mobileOpen}
           aria-controls="mobile-navigation"
         >
