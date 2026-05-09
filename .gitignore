@@ -1,0 +1,8 @@
+node_modules
+.next
+out
+.env*.local
+.DS_Store
+public/galeria/_backup_originals_*/
+public/videos/physioscience-raw.mp4
+public/physioscience/1edycja.mp4
