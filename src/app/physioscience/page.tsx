@@ -16,9 +16,7 @@ const hasLogo = fs.existsSync(logoFilePath);
 
 const videoCandidates = [
   "videos/physioscience-edycja-1.mp4",
-  "videos/physioscience-raw.mp4",
   "physioscience/1edycja.mp4",
-  "physioscience/pscience.mp4",
 ];
 
 const videoSource =
@@ -117,9 +115,8 @@ export default function PhysioSciencePage() {
                     className="h-full w-full object-cover"
                     autoPlay
                     muted
-                    loop
                     controls
-                    preload="none"
+                    preload="metadata"
                     playsInline
                     poster="/physioscience/pslogo.jpg"
                   >
@@ -129,10 +126,10 @@ export default function PhysioSciencePage() {
                 ) : (
                   <div className="flex h-full items-center justify-center p-6 text-center">
                     <p className="text-sm leading-7 text-white/62">
-                      Dodaj plik wideo do jednego z miejsc:
+                      Dodaj pełny plik wideo do jednego z miejsc:
                       <br />
                       <span className="text-white/85">
-                        public/videos/physioscience-raw.mp4
+                        public/videos/physioscience-edycja-1.mp4
                       </span>
                     </p>
                   </div>
