@@ -15,6 +15,7 @@ const logoFilePath = path.join(
 const hasLogo = fs.existsSync(logoFilePath);
 
 const videoCandidates = [
+  "physioscience/physioscience-edycja-1.mp4",
   "videos/physioscience-edycja-1.mp4",
   "physioscience/1edycja.mp4",
 ];
@@ -129,7 +130,7 @@ export default function PhysioSciencePage() {
                       Dodaj pełny plik wideo do jednego z miejsc:
                       <br />
                       <span className="text-white/85">
-                        public/videos/physioscience-edycja-1.mp4
+                        public/physioscience/physioscience-edycja-1.mp4
                       </span>
                     </p>
                   </div>
