@@ -65,6 +65,15 @@ const conferenceEntries: ConferenceEntry[] = [
   },
   {
     code: "06",
+    period: "13.05.2026",
+    location: "Festiwal Kół Naukowych",
+    title: "Wszystkie odcienie szarości - USG w praktyce młodego naukowca i fizjoterapeuty",
+    description:
+      "Podczas Festiwalu Kół Naukowych poprowadziliśmy autorski warsztat „Wszystkie odcienie szarości”, pokazując praktyczne zastosowanie USG w pracy młodego naukowca i fizjoterapeuty.",
+    tags: "USG / WARSZTAT / PRAKTYKA / EDUKACJA",
+  },
+  {
+    code: "07",
     period: "23.05.2026",
     location: "VIII Zachodniopomorskie Sympozjum Młodych Naukowców",
     title: "SEA YOU 2 - sesja naukowa",
@@ -73,7 +82,7 @@ const conferenceEntries: ConferenceEntry[] = [
     tags: "SYMPOZJUM / SEA YOU 2 / INTERDYSCYPLINARNOŚĆ",
   },
   {
-    code: "07",
+    code: "08",
     period: "27.05.2026",
     location: "IX Ogólnopolska Konferencja dla Młodych Naukowców",
     title: "Wieczór Naukowca 2026 - Wokół Człowieka",
