@@ -168,12 +168,12 @@ function MonthGroups({ items }: { items: Conference[] }) {
           aria-labelledby={`month-${group.key}`}
           className="conference-month"
         >
-          <div className="mb-3 border-y border-[#aebfb7] bg-[#dbe6e0] px-4 py-4 sm:px-5">
+          <div className="mb-3 border-y border-[#b8bbb8] bg-[#dadbd8] px-4 py-4 sm:px-5">
             <div className="flex items-center gap-3">
-              <span className="h-px w-8 bg-[#457262]" aria-hidden="true" />
+              <span className="h-px w-8 bg-[#4a504e]" aria-hidden="true" />
               <h2
                 id={`month-${group.key}`}
-                className="text-base font-semibold capitalize tracking-[0.02em] text-[#173d34] tabular-nums sm:text-lg"
+                className="text-base font-semibold capitalize tracking-[0.02em] text-[#292e2d] tabular-nums sm:text-lg"
               >
                 {group.label}
               </h2>
