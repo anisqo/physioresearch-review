@@ -70,7 +70,13 @@ function groupByMonth(items: Conference[]) {
   }));
 }
 
-function ConferenceRow({ conference }: { conference: Conference }) {
+function ConferenceRow({
+  conference,
+  dark,
+}: {
+  conference: Conference;
+  dark: boolean;
+}) {
   const date = dateLabel(conference);
   const status =
     conference.status && conference.status !== "Potwierdzone"
@@ -78,11 +84,23 @@ function ConferenceRow({ conference }: { conference: Conference }) {
       : null;
 
   return (
-    <article className="grid gap-6 border-t border-[#cfd7d2] px-4 py-8 transition-colors duration-300 odd:bg-white/55 even:bg-[#e4ece8] hover:bg-[#d8e5df] sm:px-5 sm:py-9 lg:grid-cols-[11rem_minmax(0,1fr)_13rem] lg:gap-10 lg:px-5">
-      <div className="border-l border-[#729487]/60 pl-4 pt-1 lg:border-l-0 lg:border-r lg:pl-0 lg:pr-7">
+    <article
+      className={`grid gap-6 border-t px-4 py-8 transition-colors duration-300 sm:px-5 sm:py-9 lg:grid-cols-[11rem_minmax(0,1fr)_13rem] lg:gap-10 lg:px-5 ${
+        dark
+          ? "border-[#46514e] bg-[#293230] hover:bg-[#323d3a]"
+          : "border-[#cfd7d2] bg-white/60 hover:bg-[#e4ece8]"
+      }`}
+    >
+      <div
+        className={`border-l pl-4 pt-1 lg:border-l-0 lg:border-r lg:pl-0 lg:pr-7 ${
+          dark ? "border-[#8ba89d]/45" : "border-[#729487]/60"
+        }`}
+      >
         <time
           dateTime={conference.dateStart}
-          className="block text-[0.95rem] font-medium leading-6 tracking-[0.01em] text-[#345e50] tabular-nums"
+          className={`block text-[0.95rem] font-medium leading-6 tracking-[0.01em] tabular-nums ${
+            dark ? "text-[#afd3c5]" : "text-[#345e50]"
+          }`}
         >
           {date}
         </time>
@@ -90,33 +108,33 @@ function ConferenceRow({ conference }: { conference: Conference }) {
 
       <div className="min-w-0">
         {status ? (
-          <p className="text-[10px] font-semibold uppercase tracking-[0.17em] text-[#8b4b32]">
+          <p className={`text-[10px] font-semibold uppercase tracking-[0.17em] ${dark ? "text-[#e6b79f]" : "text-[#8b4b32]"}`}>
             {status}
           </p>
         ) : null}
 
-        <h3 className={`${status ? "mt-3" : ""} max-w-3xl text-[1.35rem] leading-[1.2] tracking-[-0.025em] text-[color:var(--ink)] sm:text-[1.6rem]`}>
+        <h3 className={`${status ? "mt-3" : ""} max-w-3xl text-[1.35rem] leading-[1.2] tracking-[-0.025em] sm:text-[1.6rem] ${dark ? "text-white" : "text-[color:var(--ink)]"}`}>
           {conference.name}
         </h3>
 
-        <p className="mt-3 text-sm font-medium text-[color:var(--ink)]">
+        <p className={`mt-3 text-sm font-medium ${dark ? "text-white/85" : "text-[color:var(--ink)]"}`}>
           {conference.city}
           {conference.venue ? `, ${conference.venue}` : ""}
         </p>
 
-        <p className="mt-4 max-w-3xl text-[0.98rem] leading-7 text-[color:var(--muted)]">
+        <p className={`mt-4 max-w-3xl text-[0.98rem] leading-7 ${dark ? "text-white/65" : "text-[color:var(--muted)]"}`}>
           {conference.description}
         </p>
 
       </div>
 
-      <div className="flex flex-col items-start border-t border-[#bfcac4] pt-5 lg:border-l lg:border-t-0 lg:pl-6 lg:pt-0">
+      <div className={`flex flex-col items-start border-t pt-5 lg:border-l lg:border-t-0 lg:pl-6 lg:pt-0 ${dark ? "border-white/20" : "border-[#bfcac4]"}`}>
         {conference.price ? (
           <div>
-            <p className="text-[10px] uppercase tracking-[0.2em] text-[color:var(--quiet)]">
+            <p className={`text-[10px] uppercase tracking-[0.2em] ${dark ? "text-white/45" : "text-[color:var(--quiet)]"}`}>
               Cena
             </p>
-            <p className="mt-2 text-sm leading-6 text-[color:var(--muted)]">
+            <p className={`mt-2 text-sm leading-6 ${dark ? "text-white/65" : "text-[color:var(--muted)]"}`}>
               {conference.price}
             </p>
           </div>
@@ -126,7 +144,11 @@ function ConferenceRow({ conference }: { conference: Conference }) {
           href={conference.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-5 inline-flex min-h-11 items-center border-b border-[#006B54] text-sm font-semibold text-[#006B54] transition-colors hover:border-[color:var(--ink)] hover:text-[color:var(--ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#006B54] lg:mt-auto"
+          className={`mt-5 inline-flex min-h-11 items-center border-b text-sm font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 lg:mt-auto ${
+            dark
+              ? "border-[#9ccfbd] text-[#9ccfbd] hover:border-white hover:text-white focus-visible:outline-[#9ccfbd]"
+              : "border-[#006B54] text-[#006B54] hover:border-[color:var(--ink)] hover:text-[color:var(--ink)] focus-visible:outline-[#006B54]"
+          }`}
         >
           <span>Strona konferencji</span>
           <span aria-hidden="true" className="ml-2 text-base font-normal">
@@ -159,8 +181,12 @@ function MonthGroups({ items }: { items: Conference[] }) {
           </div>
 
           <div className="border-b border-[#c3cec8]">
-            {group.entries.map((conference) => (
-              <ConferenceRow key={conference.id} conference={conference} />
+            {group.entries.map((conference, index) => (
+              <ConferenceRow
+                key={conference.id}
+                conference={conference}
+                dark={index % 2 === 1}
+              />
             ))}
           </div>
         </section>
