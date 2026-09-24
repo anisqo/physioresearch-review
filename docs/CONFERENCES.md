@@ -23,42 +23,18 @@ Dodaj do tablicy w `src/data/conferences.json` jeden obiekt:
   "description": "Krótki, rzeczowy opis wydarzenia.",
   "price": "Fizjoterapeuta: 500 zł",
   "url": "https://strona-organizatora.pl/",
-  "recommended": false,
-  "free": false,
   "tags": ["fizjoterapia", "ortopedia"],
   "organizer": "Nazwa organizatora",
   "lastVerified": "2026-09-24",
-  "status": "Potwierdzone",
-  "sourceCategory": "Fizjoterapia / ortopedia"
+  "status": "Potwierdzone"
 }
 ```
 
-Wymagane są co najmniej: `id`, `name`, `dateStart`, `city`, `venue`, `description`, `url`, `recommended`, `free`, `tags`, `organizer` i `lastVerified`. Daty zapisuj jako `RRRR-MM-DD`. Pole `dateEnd` można pominąć przy wydarzeniu jednodniowym.
+Wymagane są co najmniej: `id`, `name`, `dateStart`, `city`, `venue`, `description`, `url`, `tags`, `organizer` i `lastVerified`. Daty zapisuj jako `RRRR-MM-DD`. Pole `dateEnd` można pominąć przy wydarzeniu jednodniowym.
 
 ## Jak zmodyfikować wydarzenie
 
 Znajdź rekord po niepowtarzalnym polu `id` i zmień wybrane wartości. Po każdej kontroli oficjalnej strony zaktualizuj `lastVerified`.
-
-## Szczególnie polecane
-
-Ustaw:
-
-```json
-"recommended": true
-```
-
-Wydarzenie otrzyma dyskretne oznaczenie i będzie widoczne po użyciu filtra „Szczególnie polecane”.
-
-## Wydarzenie bezpłatne
-
-Ustaw:
-
-```json
-"free": true,
-"price": "Udział bezpłatny"
-```
-
-Jeżeli tylko jeden wariant udziału jest bezpłatny, opisz to precyzyjnie w `price`.
 
 ## Cena
 
@@ -68,7 +44,11 @@ W polu `price` wpisuj wyłącznie potwierdzoną informację z oficjalnego źród
 
 Rekordów nie usuwamy. Po zakończeniu wydarzenia strona automatycznie przenosi je pod przycisk „Zobacz minione wydarzenia”. Dla konferencji wielodniowej decyduje `dateEnd`, a dla jednodniowej `dateStart`.
 
-## Dostępne główne tagi filtrów
+## Aktualizacja danych
+
+Strona nie pobiera automatycznie nowych konferencji z internetu. Nowe wydarzenia trzeba dodać do `src/data/conferences.json`, dzięki czemu publikujemy wyłącznie sprawdzone informacje. Automatyczne są natomiast sortowanie wydarzeń, grupowanie według miesięcy oraz przenoszenie zakończonych konferencji do archiwum.
+
+## Tagi wyszukiwarki
 
 - `fizjoterapia`
 - `ortopedia`
@@ -76,4 +56,4 @@ Rekordów nie usuwamy. Po zakończeniu wydarzenia strona automatycznie przenosi 
 - `medycyna sportowa`
 - `nauka o ruchu`
 
-Można dopisywać dokładniejsze tagi. Wyszukiwarka również je przeszukuje.
+Można dopisywać dokładniejsze tagi. Tagi nie są wyświetlane jako kategorie, ale pomagają wyszukiwarce znaleźć właściwe wydarzenie.

@@ -1,16 +1,5 @@
 import conferenceData from "@/data/conferences.json";
 
-export const conferenceTopics = [
-  { value: "all", label: "Wszystkie" },
-  { value: "fizjoterapia", label: "Fizjoterapia" },
-  { value: "ortopedia", label: "Ortopedia" },
-  { value: "rehabilitacja", label: "Rehabilitacja" },
-  { value: "medycyna sportowa", label: "Medycyna sportowa" },
-  { value: "nauka o ruchu", label: "Nauka o ruchu" },
-] as const;
-
-export type ConferenceTopic = (typeof conferenceTopics)[number]["value"];
-
 export type Conference = {
   id: string;
   name: string;
@@ -21,13 +10,10 @@ export type Conference = {
   description: string;
   price?: string;
   url: string;
-  recommended: boolean;
-  free: boolean;
   tags: string[];
   organizer: string;
   lastVerified: string;
   status?: string;
-  sourceCategory?: string;
   note?: string;
   registrationDeadline?: string;
   studentPrice?: string;
@@ -91,12 +77,6 @@ function parseConference(value: unknown, index: number): Conference {
     );
   }
 
-  if (typeof value.recommended !== "boolean" || typeof value.free !== "boolean") {
-    throw new Error(
-      `Konferencja ${index + 1}: pola "recommended" i "free" muszą być logiczne.`
-    );
-  }
-
   if (
     !Array.isArray(value.tags) ||
     value.tags.length === 0 ||
@@ -124,8 +104,6 @@ function parseConference(value: unknown, index: number): Conference {
     description: requiredString(value, "description", index),
     price: optionalString(value, "price"),
     url,
-    recommended: value.recommended,
-    free: value.free,
     tags: value.tags,
     organizer: requiredString(value, "organizer", index),
     lastVerified: validIsoDate(
@@ -134,7 +112,6 @@ function parseConference(value: unknown, index: number): Conference {
       index
     ),
     status: optionalString(value, "status"),
-    sourceCategory: optionalString(value, "sourceCategory"),
     note: optionalString(value, "note"),
     registrationDeadline: optionalString(value, "registrationDeadline"),
     studentPrice: optionalString(value, "studentPrice"),

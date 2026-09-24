@@ -2,7 +2,6 @@ import fs from "node:fs";
 import path from "node:path";
 import Link from "next/link";
 import { HeroFigure } from "@/components/home/HeroFigure";
-import { IntroOverlay } from "@/components/site/IntroOverlay";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { home } from "@/data/home";
@@ -82,8 +81,6 @@ export default function HomePage() {
 
   return (
     <>
-      <IntroOverlay />
-
       <main id="top" className="min-h-screen">
         <SiteHeader />
 

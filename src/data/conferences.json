@@ -5,10 +5,8 @@
     "dateStart": "2026-10-01",
     "city": "Nadarzyn / online",
     "venue": "",
-    "description": "Konferencja hybrydowa podczas Targów Rehabilitacja; telemedycyna, m-health i telerehabilitacja. Wartościowa głównie dla osób zainteresowanych technologią i zdalną rehabilitacją.",
+    "description": "Konferencja hybrydowa podczas Targów Rehabilitacja poświęcona telemedycynie, m-health i telerehabilitacji.",
     "url": "https://www.telemedycyna.org/conference/",
-    "recommended": false,
-    "free": true,
     "tags": [
       "rehabilitacja",
       "telemedycyna",
@@ -17,7 +15,6 @@
     "organizer": "Polskie Towarzystwo Telemedycyny i e-Zdrowia + WUM + UKSW + Ptak Warsaw Expo",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Telemedycyna / telerehabilitacja",
     "price": "400 zł standard; 100 zł członek PTTMeZ; 20 zł student; stacjonarnie jako słuchacz targów – bezpłatnie",
     "note": "Pierwszy dzień Targów Rehabilitacja 2026."
   },
@@ -27,10 +24,8 @@
     "dateStart": "2026-10-02",
     "city": "Ciechocinek",
     "venue": "",
-    "description": "Ból kręgosłupa, diagnostyka funkcjonalna, neuromodulacja i terapia manualna. Program deklaruje odniesienie do EBM i ograniczeń terapii manualnej; część treści warto oceniać krytycznie.",
+    "description": "Program obejmuje ból kręgosłupa, diagnostykę funkcjonalną, neuromodulację, terapię manualną oraz zagadnienia evidence-based medicine.",
     "url": "https://ptmm.pl/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "ortopedia",
@@ -40,7 +35,6 @@
     "organizer": "Polskie Towarzystwo Medycyny Manualnej",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Fizjoterapia MSK / ból kręgosłupa",
     "dateEnd": "2026-10-03",
     "note": "Patronat KRF."
   },
@@ -50,10 +44,8 @@
     "dateStart": "2026-10-02",
     "city": "Otwock",
     "venue": "",
-    "description": "Robotycznie wspomagana endoprotezoplastyka kolana i biodra; wymiana doświadczeń z różnych systemów. Głównie lekarskie, ale przydatne do rozumienia współczesnej chirurgii.",
+    "description": "Program dotyczy robotycznie wspomaganej endoprotezoplastyki kolana i biodra oraz wymiany doświadczeń związanych z różnymi systemami.",
     "url": "https://www.robotykawortopedii2026.pl/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "ortopedia",
       "robotyka",
@@ -62,7 +54,6 @@
     "organizer": "Klinika Ortopedii CMKP / SPSK im. prof. A. Grucy + Medisfera",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Ortopedia / robotyka / endoprotezoplastyka",
     "dateEnd": "2026-10-03"
   },
   {
@@ -71,10 +62,8 @@
     "dateStart": "2026-10-03",
     "city": "Nadarzyn",
     "venue": "",
-    "description": "Diagnostyka i terapia funkcjonalna stopy, zaopatrzenie ortopedyczne oraz wpływ stopy na chód, równowagę i cały układ ruchu. Wykłady, przypadki, panele i warsztaty.",
+    "description": "Diagnostyka i terapia funkcjonalna stopy, zaopatrzenie ortopedyczne oraz wpływ stopy na chód, równowagę i układ ruchu. W programie wykłady, przypadki, panele i warsztaty.",
     "url": "https://targirehabilitacja.pl/",
-    "recommended": false,
-    "free": true,
     "tags": [
       "ortopedia",
       "nauka o ruchu",
@@ -85,7 +74,6 @@
     "organizer": "KOORDYNACJA / Targi Rehabilitacja",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Stopa / biomechanika kliniczna / ortopodologia",
     "price": "Bezpłatna rejestracja na wydarzenie/targi",
     "note": "Kongres 3.10; Targi Rehabilitacja 1–3.10.2026."
   },
@@ -95,10 +83,8 @@
     "dateStart": "2026-10-09",
     "city": "Rzeszów",
     "venue": "",
-    "description": "Ogólnopolskie forum: 23 warsztaty, 12 prelekcji i panel dyskusyjny; szeroka tematyka kliniczna, interdyscyplinarność i praktyczne podejście.",
+    "description": "Ogólnopolskie forum obejmujące 23 warsztaty, 12 prelekcji i panel dyskusyjny o tematyce klinicznej.",
     "url": "https://kif.info.pl/events/iv-podkarpackie-forum-praktykow-fizjoterapii/",
-    "recommended": true,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "praktyka kliniczna"
@@ -106,7 +92,6 @@
     "organizer": "Uniwersytet Rzeszowski",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Fizjoterapia / praktyka kliniczna",
     "dateEnd": "2026-10-10",
     "note": "Patronat KRF; organizatorzy spodziewają się >250 uczestników."
   },
@@ -116,10 +101,8 @@
     "dateStart": "2026-10-09",
     "city": "Wrocław",
     "venue": "",
-    "description": "Interdyscyplinarna konferencja z udziałem fizjoterapii, logopedii, ortodoncji i laryngologii; układ stomatognatyczny, oddech i postawa. Węższy zakres niż główny profil MSK.",
+    "description": "Konferencja łącząca fizjoterapię, logopedię, ortodoncję i laryngologię. Tematy obejmują układ stomatognatyczny, oddech i postawę.",
     "url": "https://pttm.pl/regulamin-uczestnictwa-w-iii-konferencji-pttm",
-    "recommended": false,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "ortopedia",
@@ -129,7 +112,6 @@
     "organizer": "Polskie Towarzystwo Terapii Miofunkcjonalnej",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone – lokalizacja wg organizatora",
-    "sourceCategory": "Fizjoterapia stomatognatyczna / miofunkcjonalna",
     "dateEnd": "2026-10-10",
     "note": "Oficjalny PTTM podaje Wrocław; część wtórnych kalendarzy pokazuje Warszawę."
   },
@@ -139,10 +121,8 @@
     "dateStart": "2026-10-15",
     "city": "Nałęczów",
     "venue": "",
-    "description": "Interdyscyplinarne wydarzenie z fizjologią wysiłku, treningiem, rehabilitacją kardiologiczną i kardiologią sportową. Mniej MSK, ale mocne dla wysiłku i medycyny sportowej.",
+    "description": "Program obejmuje fizjologię wysiłku, trening, rehabilitację kardiologiczną i kardiologię sportową.",
     "url": "https://wspolnakonferencjaptk.pl/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "ortopedia",
       "rehabilitacja",
@@ -153,7 +133,6 @@
     "organizer": "Polskie Towarzystwo Kardiologiczne – sekcje rehabilitacji i kardiologii sportowej",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Rehabilitacja / fizjologia wysiłku / medycyna sportowa",
     "dateEnd": "2026-10-17",
     "price": "Około 500 zł – inne zawody medyczne (aktualny próg po 15.09); warianty jednodniowe/warsztaty osobno"
   },
@@ -163,10 +142,8 @@
     "dateStart": "2026-10-16",
     "city": "Opole",
     "venue": "",
-    "description": "ACL/PCL, procedury małoinwazyjne, robotyka kolana, urazy miednicy, MICA i nowoczesne techniki operacyjne. Mocno chirurgiczne, ale użyteczne dla fizjoterapeuty ortopedycznego.",
+    "description": "Program obejmuje ACL/PCL, procedury małoinwazyjne, robotykę kolana, urazy miednicy, MICA i techniki operacyjne.",
     "url": "https://www.ortopediaopole2026.pl/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "ortopedia",
@@ -178,7 +155,6 @@
     "organizer": "Uniwersytet Opolski / USK Opole + Medisfera",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Ortopedia / traumatologia / kolano / miednica",
     "dateEnd": "2026-10-17"
   },
   {
@@ -187,10 +163,8 @@
     "dateStart": "2026-10-16",
     "city": "Łódź",
     "venue": "",
-    "description": "Dedykowana sesja fizjoterapeutów: prehabilitacja, badanie funkcjonalne i rehabilitacja okołooperacyjna w leczeniu raka piersi.",
+    "description": "Sesja dla fizjoterapeutów poświęcona prehabilitacji, badaniu funkcjonalnemu i rehabilitacji okołooperacyjnej w leczeniu raka piersi.",
     "url": "https://www.termedia.pl/Konferencja-Breast-Design-Days-SESJA-FIZJOTERAPEUTOW%2C2833%2C46150.html",
-    "recommended": false,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "rehabilitacja",
@@ -200,7 +174,6 @@
     "organizer": "Termedia / komitet Breast Design Days",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Fizjoterapia onkologiczna / okołooperacyjna",
     "dateEnd": "2026-10-17",
     "note": "Pozycja uzupełniająca – nie jest wydarzeniem MSK."
   },
@@ -210,10 +183,8 @@
     "dateStart": "2026-10-16",
     "city": "Bielsko-Biała",
     "venue": "",
-    "description": "Duże specjalistyczne wydarzenie barkowe: transmisje operacji, wykłady, przypadki i dyskusje o niestabilności, stożku rotatorów, bicepsie/SLAP i endoprotezoplastyce.",
+    "description": "Specjalistyczne wydarzenie dotyczące barku: transmisje operacji, wykłady, przypadki i dyskusje o niestabilności, stożku rotatorów, bicepsie/SLAP i endoprotezoplastyce.",
     "url": "https://konferencja-ortopedia.pl/",
-    "recommended": true,
-    "free": false,
     "tags": [
       "ortopedia",
       "bark",
@@ -222,7 +193,6 @@
     "organizer": "Bielskie środowisko ortopedyczne / partnerzy PTBŁ i PTArtro",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Ortopedia / bark / chirurgia kończyny górnej",
     "dateEnd": "2026-10-17",
     "price": "Fizjoterapeuta: 800 zł do 30.09; od 1.10 – 1400 zł",
     "note": "Aktualny próg cenowy zmienia się 1.10.2026."
@@ -233,10 +203,8 @@
     "dateStart": "2026-10-21",
     "city": "Kochcice",
     "venue": "",
-    "description": "Szeroka interdyscyplinarna konferencja o jakości życia, zdrowiu, aktywności fizycznej i rehabilitacji. Przydatna głównie naukowo, mniej skoncentrowana na ortopedii MSK.",
+    "description": "Interdyscyplinarna konferencja poświęcona jakości życia, zdrowiu, aktywności fizycznej i rehabilitacji.",
     "url": "https://wcongress.pl/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "ortopedia",
       "rehabilitacja",
@@ -247,7 +215,6 @@
     "organizer": "Środowisko akademickie / partnerzy międzynarodowi",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Nauka / rehabilitacja / aktywność fizyczna",
     "dateEnd": "2026-10-23"
   },
   {
@@ -256,10 +223,8 @@
     "dateStart": "2026-10-23",
     "city": "Warszawa",
     "venue": "",
-    "description": "Pierwsze sympozjum ortopedii rewizyjnej: infekcje, rewizje biodra i kolana, ubytki kostne i rekonstrukcje. Głównie chirurgiczne, ale cenowo dostępne dla fizjoterapeutów.",
+    "description": "Sympozjum ortopedii rewizyjnej obejmujące infekcje, rewizje biodra i kolana, ubytki kostne oraz rekonstrukcje.",
     "url": "https://www.reortho2026.pl/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "ortopedia",
@@ -269,7 +234,6 @@
     "organizer": "Klinika Ortopedii i Chirurgii Rekonstrukcyjnej CMKP + Medisfera",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Ortopedia rewizyjna / endoprotezoplastyka",
     "price": "Fizjoterapeuta: 200 zł do 30.09; od 1.10 – 300 zł"
   },
   {
@@ -278,10 +242,8 @@
     "dateStart": "2026-10-23",
     "city": "Kraków",
     "venue": "",
-    "description": "Robotyka, AI, symulacja i nowoczesne technologie w leczeniu i rehabilitacji, z częścią warsztatową. Bezpośrednio kierowane do fizjoterapeutów i środowiska akademickiego.",
+    "description": "Program obejmuje robotykę, AI, symulację i technologie stosowane w leczeniu, rehabilitacji oraz kształceniu zawodów medycznych.",
     "url": "https://www.robotyka2026.pl/",
-    "recommended": true,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "rehabilitacja",
@@ -291,7 +253,6 @@
     "organizer": "Polskie Towarzystwo Fizjoterapii – Oddział Małopolski",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Fizjoterapia / robotyka / technologie",
     "dateEnd": "2026-10-24",
     "price": "Fizjoterapeuta: 400 zł do 30.09; od 1.10 – 500 zł; warsztaty 50 zł"
   },
@@ -301,10 +262,8 @@
     "dateStart": "2026-10-23",
     "city": "Kraków",
     "venue": "",
-    "description": "Kompleksowa opieka po amputacjach: rehabilitacja, protetyka, analiza chodu, pediatria i amputacje cukrzycowe. Bardzo praktyczne, choć wąsko specjalistyczne.",
+    "description": "Program dotyczy opieki po amputacjach: rehabilitacji, protetyki, analizy chodu, pediatrii i amputacji cukrzycowych.",
     "url": "https://forumamputacji.pl/",
-    "recommended": false,
-    "free": true,
     "tags": [
       "rehabilitacja",
       "nauka o ruchu",
@@ -314,7 +273,6 @@
     "organizer": "Fundacja Centrum Rehabilitacji Znowu w Biegu",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Rehabilitacja / amputacje / protetyka",
     "dateEnd": "2026-10-24",
     "price": "Konferencja 23.10 – bezpłatna; szkolenie 24.10 może mieć osobne zasady",
     "note": "Patronat KRF."
@@ -325,10 +283,8 @@
     "dateStart": "2026-10-23",
     "city": "Warszawa",
     "venue": "",
-    "description": "Duży kongres specjalistyczny: zwyrodnienia, chrząstka, endoprotezoplastyka, MIS, przodostopie, złamania i następstwa urazów; międzynarodowa kadra.",
+    "description": "Kongres poświęcony zwyrodnieniom, chrząstce, endoprotezoplastyce, MIS, przodostopiu, złamaniom i następstwom urazów.",
     "url": "https://kongrespfas.pl/",
-    "recommended": true,
-    "free": false,
     "tags": [
       "ortopedia",
       "stopa i staw skokowy"
@@ -336,7 +292,6 @@
     "organizer": "Polskie Towarzystwo Stopy i Stawu Skokowo-Goleniowego (PFAS)",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Ortopedia / stopa i staw skokowy",
     "dateEnd": "2026-10-24",
     "price": "Cennik wielowariantowy; członek PFAS ok. 1900 zł, pre-course osobno – sprawdzić bieżącą taryfę"
   },
@@ -346,10 +301,8 @@
     "dateStart": "2026-10-24",
     "city": "Warszawa",
     "venue": "",
-    "description": "Interdyscyplinarna konferencja o dysfunkcjach SSŻ i obszarze głowy/szyi z udziałem fizjoterapeutów, ortodontów, protetyków i chirurgów szczękowych.",
+    "description": "Interdyscyplinarna konferencja o dysfunkcjach stawu skroniowo-żuchwowego oraz obszarze głowy i szyi, z udziałem przedstawicieli kilku zawodów medycznych.",
     "url": "https://holimedica.pl/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "ortopedia",
@@ -360,7 +313,6 @@
     "organizer": "HoliMedica",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Staw skroniowo-żuchwowy / fizjoterapia głowy i szyi",
     "dateEnd": "2026-10-25",
     "price": "2600 zł od 1.09 (wg aktualnego komunikatu publicznego)",
     "note": "Węższy profil niż klasyczna ortopedia MSK."
@@ -371,10 +323,8 @@
     "dateStart": "2026-11-06",
     "city": "Łódź",
     "venue": "",
-    "description": "Spotkanie ortopedów i radiologów z udziałem wykładowców UCSD. Wartościowe dla lepszego rozumienia diagnostyki obrazowej w ortopedii.",
+    "description": "Spotkanie ortopedów i radiologów z udziałem wykładowców University of California San Diego, dotyczące diagnostyki obrazowej w ortopedii.",
     "url": "https://kor2026.pl/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "ortopedia",
       "radiologia msk"
@@ -382,7 +332,6 @@
     "organizer": "Komitet KOR / WhyNotCongress",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Ortopedia / radiologia MSK",
     "dateEnd": "2026-11-07"
   },
   {
@@ -391,10 +340,8 @@
     "dateStart": "2026-11-13",
     "city": "Bielsko-Biała",
     "venue": "",
-    "description": "Konferencja o prehabilitacji w ginekologii onkologicznej. Wartościowa w rehabilitacji onkologicznej, ale poza głównym profilem narządu ruchu.",
+    "description": "Konferencja poświęcona prehabilitacji w ginekologii onkologicznej.",
     "url": "https://kif.info.pl/event-category/sport/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "rehabilitacja",
@@ -405,7 +352,6 @@
     "organizer": "Beskidzkie Centrum Onkologii",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Fizjoterapia onkologiczna / prehabilitacja",
     "note": "Patronat KRF."
   },
   {
@@ -414,10 +360,8 @@
     "dateStart": "2026-11-26",
     "city": "Łódź",
     "venue": "",
-    "description": "Główne wydarzenie PTReh: ból, spastyczność, robotyka, diagnostyka nerwów obwodowych, toksyna botulinowa, warsztaty z anatomii i badania pacjenta.",
+    "description": "Sympozjum Polskiego Towarzystwa Rehabilitacji obejmujące ból, spastyczność, robotykę, diagnostykę nerwów obwodowych, toksynę botulinową i badanie pacjenta.",
     "url": "https://www.glc.edu.pl/konferencje/ptreh",
-    "recommended": true,
-    "free": false,
     "tags": [
       "rehabilitacja",
       "ból",
@@ -426,7 +370,6 @@
     "organizer": "Polskie Towarzystwo Rehabilitacji",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Rehabilitacja / ból / neurologia",
     "dateEnd": "2026-11-28"
   },
   {
@@ -435,10 +378,8 @@
     "dateStart": "2026-11-26",
     "city": "Wrocław",
     "venue": "",
-    "description": "Innowacje i powikłania w chirurgii kręgosłupa: deformacje, endoskopia, onkologia, infekcje i neuromodulacja. Wysoka wartość dla zrozumienia leczenia operacyjnego.",
+    "description": "Program obejmuje deformacje, endoskopię, onkologię, infekcje, neuromodulację oraz powikłania w chirurgii kręgosłupa.",
     "url": "https://www.zjazdptchk2026.pl/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "ortopedia",
       "kręgosłup",
@@ -447,7 +388,6 @@
     "organizer": "Polskie Towarzystwo Chirurgii Kręgosłupa",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Kręgosłup / ortopedia / neurochirurgia",
     "dateEnd": "2026-11-28"
   },
   {
@@ -456,10 +396,8 @@
     "dateStart": "2026-11-27",
     "city": "Warszawa",
     "venue": "",
-    "description": "Mocno dopasowana do fizjoterapeuty MSK: część wykładowa + intensywne warsztaty, współpraca ortopedii i fizjoterapii, nauka połączona z praktyką.",
+    "description": "Program obejmuje wykłady, warsztaty oraz zagadnienia współpracy ortopedii i fizjoterapii.",
     "url": "https://www.awf.edu.pl/wr/nauka/konferencje-i-seminaria-naukowe/skn",
-    "recommended": true,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "ortopedia",
@@ -469,7 +407,6 @@
     "organizer": "Wydział Rehabilitacji AWF Warszawa",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Fizjoterapia ortopedyczna / MSK",
     "price": "280 zł; studenci 220 zł",
     "note": "Patronat KRF."
   },
@@ -481,8 +418,6 @@
     "venue": "",
     "description": "Interdyscyplinarne postępowanie w przerzutach do kości: diagnostyka, leczenie systemowe i operacyjne, rekonstrukcje oraz profilaktyka złamań patologicznych.",
     "url": "https://www.ortopediapoznan2026.pl/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "ortopedia",
       "rehabilitacja",
@@ -491,7 +426,6 @@
     "organizer": "Poznańskie środowisko ortopedyczne + Medisfera",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Ortopedia / rehabilitacja / ortopedia onkologiczna",
     "note": "Blisko Poznania; profil bardziej onkologiczno-ortopedyczny."
   },
   {
@@ -500,10 +434,8 @@
     "dateStart": "2026-11-27",
     "city": "Warszawa",
     "venue": "",
-    "description": "Jedno z najmocniejszych wydarzeń dla nowoczesnego leczenia zachowującego staw; światowi eksperci, live surgery oraz osobna sesja dla fizjoterapeutów i trenerów motorycznych.",
+    "description": "Kongres dotyczący leczenia zachowującego staw, obejmujący wykłady, transmisje operacji oraz sesję dla fizjoterapeutów i trenerów motorycznych.",
     "url": "https://jointpreservation.pl/",
-    "recommended": true,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "ortopedia",
@@ -514,7 +446,6 @@
     "organizer": "Joint Preservation Congress / partnerzy kliniczni",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Ortopedia sportowa / joint preservation / fizjoterapia",
     "dateEnd": "2026-11-28",
     "price": "Fizjoterapeuta: 800 zł / 2 dni; 650 zł / 1 dzień sesji fizjo"
   },
@@ -524,10 +455,8 @@
     "dateStart": "2026-11-28",
     "city": "Warszawa",
     "venue": "",
-    "description": "Spersonalizowane leczenie kolana, rekonstrukcja chrząstki, implanty, endoprotezy jednoprzedziałowe i robotyka. Głównie chirurgiczne.",
+    "description": "Program obejmuje leczenie kolana, rekonstrukcję chrząstki, implanty, endoprotezy jednoprzedziałowe i robotykę.",
     "url": "https://www.kneemaster2026.pl/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "ortopedia",
       "kolano",
@@ -535,8 +464,7 @@
     ],
     "organizer": "Medisfera / komitet naukowy Knee Master",
     "lastVerified": "2026-09-24",
-    "status": "Potwierdzone",
-    "sourceCategory": "Ortopedia / kolano / endoprotezoplastyka"
+    "status": "Potwierdzone"
   },
   {
     "id": "xiii-sympozjum-biomechaniki-sportu-i-rehabilitacji-2026",
@@ -544,10 +472,8 @@
     "dateStart": "2026-12-03",
     "city": "Warszawa",
     "venue": "",
-    "description": "Biomechanika sportu i rehabilitacji, biomechanika kliniczna, analiza układu ruchu i nowe metody badawcze. Szczególnie mocne naukowo i aparaturowo.",
+    "description": "Sympozjum poświęcone biomechanice sportu i rehabilitacji, biomechanice klinicznej, analizie układu ruchu i metodom badawczym.",
     "url": "https://www.awf.edu.pl/wwf/nauka/konferencje-i-seminaria-naukowe/sympozjum-biomechaniki-sportu-i-rehabilitacji-2026",
-    "recommended": true,
-    "free": false,
     "tags": [
       "rehabilitacja",
       "medycyna sportowa",
@@ -557,7 +483,6 @@
     "organizer": "AWF Warszawa / środowisko Polskiego Towarzystwa Biomechaniki",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Biomechanika / rehabilitacja / nauka o ruchu",
     "dateEnd": "2026-12-04",
     "price": "600 zł; członek PTB 550 zł"
   },
@@ -567,10 +492,8 @@
     "dateStart": "2026-12-04",
     "city": "Warszawa",
     "venue": "",
-    "description": "Główna konferencja PTF. Poprzednia edycja: >600 uczestników, 35 wystawców, >100 wykładów i ok. 60 plakatów; szeroki przekrój fizjoterapii.",
+    "description": "Konferencja Polskiego Towarzystwa Fizjoterapii obejmująca szeroki zakres zagadnień związanych z fizjoterapią.",
     "url": "https://www.18konferencja.pl/",
-    "recommended": true,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "ortopedia",
@@ -579,7 +502,6 @@
     "organizer": "Polskie Towarzystwo Fizjoterapii",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Fizjoterapia / kongres ogólnopolski",
     "dateEnd": "2026-12-05",
     "note": "Termin nakłada się częściowo z Sympozjum Biomechaniki (3–4.12)."
   },
@@ -589,18 +511,15 @@
     "dateStart": "2026-12-11",
     "city": "Warszawa",
     "venue": "",
-    "description": "Akademicka konferencja o ruchu, zdrowiu i aktywności fizycznej. Interesująca naukowo, ale program nie jest tak bezpośrednio kliniczny jak wydarzenia orto/fizjo.",
+    "description": "Akademicka konferencja poświęcona ruchowi, zdrowiu i aktywności fizycznej.",
     "url": "https://www.awf.edu.pl/nauka/planowane-konferencje/organizowane-przez-awf-warszawa/plan-konferencji-naukowych-na-rok-2026",
-    "recommended": false,
-    "free": false,
     "tags": [
       "nauka o ruchu",
       "aktywność fizyczna"
     ],
     "organizer": "Szkoła Doktorska AWF Warszawa",
     "lastVerified": "2026-09-24",
-    "status": "Potwierdzone",
-    "sourceCategory": "Nauka o ruchu / aktywność fizyczna"
+    "status": "Potwierdzone"
   },
   {
     "id": "iii-konferencja-ptartro-fizjo-juniormaster-specialty-days-2026",
@@ -608,10 +527,8 @@
     "dateStart": "2026-12-11",
     "city": "Toruń",
     "venue": "",
-    "description": "Bardzo mocno dopasowana do MSK: bark, kolano, staw skokowy, biodro, USG, prehabilitacja, rehabilitacja pooperacyjna, panele ORTO–FIZJO i warsztaty.",
+    "description": "Program obejmuje bark, kolano, staw skokowy, biodro, USG, prehabilitację, rehabilitację pooperacyjną, panele ORTO–FIZJO i warsztaty.",
     "url": "https://juniormaster.ptartro.pl/",
-    "recommended": true,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "ortopedia",
@@ -622,7 +539,6 @@
     "organizer": "Polskie Towarzystwo Artroskopowe + Sekcja Fizjoterapii PTArtro",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Ortopedia / fizjoterapia / traumatologia sportowa",
     "dateEnd": "2026-12-12",
     "price": "Fizjoterapeuta: 950 zł członek PTArtro/Sekcji Fizjo; 1600 zł niezrzeszony (od 1.09)",
     "note": "Jedno z najlepiej dopasowanych wydarzeń do praktycznej fizjoterapii ortopedycznej."
@@ -633,10 +549,8 @@
     "dateStart": "2027-02-19",
     "city": "Kraków / hybrydowo",
     "venue": "",
-    "description": "Interdyscyplinarne leczenie zaburzeń dna miednicy; fizjoterapia jest jedną z grup docelowych. Wartościowe dla uroginekologii, ale poza rdzeniem MSK.",
+    "description": "Interdyscyplinarna konferencja dotycząca leczenia zaburzeń dna miednicy, skierowana między innymi do fizjoterapeutów.",
     "url": "https://psgiu.pl/iii-konferencja-psgiu-uroginekologia-27/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "ortopedia",
@@ -645,7 +559,6 @@
     "organizer": "Polskie Stowarzyszenie Ginekologii i Uroginekologii",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Fizjoterapia uroginekologiczna",
     "dateEnd": "2027-02-20",
     "price": "2 dni: od 1400 zł w pierwszym progu; późniejsze progi do 1800 zł; rabaty członkowskie/studenckie"
   },
@@ -655,10 +568,8 @@
     "dateStart": "2027-03-11",
     "city": "Poznań",
     "venue": "",
-    "description": "Duże specjalistyczne wydarzenie bark–łokieć z wykładami state-of-the-art, przypadkami i sesjami interdyscyplinarnymi; kierowane również do fizjoterapeutów.",
+    "description": "Specjalistyczne wydarzenie dotyczące barku i łokcia, obejmujące wykłady, prezentacje przypadków i sesje interdyscyplinarne.",
     "url": "https://ptbl.pl/",
-    "recommended": true,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "ortopedia",
@@ -667,7 +578,6 @@
     "organizer": "Polskie Towarzystwo Barku i Łokcia + Termedia",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Ortopedia / bark i łokieć / fizjoterapia",
     "dateEnd": "2027-03-13",
     "price": "Fizjoterapeuta / terapeuta zajęciowy: 770 zł do 31.01.2027; potem 830 zł",
     "note": "Bardzo wygodne logistycznie z Poznania/Gorzowa."
@@ -678,10 +588,8 @@
     "dateStart": "2027-03-12",
     "city": "Łódź",
     "venue": "",
-    "description": "Duża konferencja uroginekologiczna z osobną kategorią uczestnictwa dla fizjoterapeutów. Pozycja uzupełniająca, poza głównym zakresem orto/MSK.",
+    "description": "Konferencja uroginekologiczna z osobną kategorią uczestnictwa dla fizjoterapeutów.",
     "url": "https://uroginekologia.info.pl/konferencja-uroginekologiczna/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "ortopedia",
@@ -691,7 +599,6 @@
     "organizer": "Organizatorzy Uroginekologia.info.pl / współpraca EUGA",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Uroginekologia / fizjoterapia dna miednicy",
     "dateEnd": "2027-03-14"
   },
   {
@@ -700,10 +607,8 @@
     "dateStart": "2027-04-03",
     "city": "Falenty",
     "venue": "",
-    "description": "Międzynarodowi wykładowcy, manipulacja powięziowa, linie powięziowe i zastosowania kliniczne. Tematyka ciekawa, lecz poziom dowodów dla części koncepcji jest heterogeniczny – traktować krytycznie.",
+    "description": "Program obejmuje manipulację powięziową, linie powięziowe i zastosowania kliniczne. Poziom dowodów dla omawianych koncepcji jest zróżnicowany.",
     "url": "https://stzkon.pl/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "nauka o ruchu",
@@ -713,7 +618,6 @@
     "organizer": "Organizator STZKON",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Fizjoterapia / powięź / terapia manualna",
     "dateEnd": "2027-04-04"
   },
   {
@@ -722,10 +626,8 @@
     "dateStart": "2027-04-09",
     "city": "Katowice",
     "venue": "",
-    "description": "Jubileuszowa konferencja dużego ośrodka urazowo-ortopedycznego; operacje rekonstrukcyjne, endoprotezoplastyka rewizyjna i ortopedia onkologiczna. Patronat naukowy PTOiTr.",
+    "description": "Konferencja jubileuszowa ośrodka urazowo-ortopedycznego, poświęcona operacjom rekonstrukcyjnym, endoprotezoplastyce rewizyjnej i ortopedii onkologicznej.",
     "url": "https://www.ortopediapiekary.pl/",
-    "recommended": false,
-    "free": false,
     "tags": [
       "ortopedia",
       "nauka o ruchu",
@@ -735,7 +637,6 @@
     "organizer": "Wojewódzki Szpital Chirurgii Urazowej w Piekarach Śląskich",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Ortopedia / traumatologia / rekonstrukcja",
     "dateEnd": "2027-04-10"
   },
   {
@@ -744,10 +645,8 @@
     "dateStart": "2027-05-20",
     "city": "Gdańsk",
     "venue": "",
-    "description": "Główny kongres krajowego towarzystwa ortopedii dziecięcej. Tematy operacyjne, urazowe, deformacje, chód i prehabilitacja; istotny także dla fizjoterapii pediatrycznej.",
+    "description": "Kongres Polskiego Towarzystwa Ortopedii Dziecięcej. Program obejmuje zagadnienia operacyjne i urazowe, deformacje, chód oraz prehabilitację.",
     "url": "https://www.congressus.pl/v-kongres-polskiego-towarzystwa-ortopedii-dzieciecej/",
-    "recommended": true,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "ortopedia",
@@ -757,7 +656,6 @@
     "organizer": "Polskie Towarzystwo Ortopedii Dziecięcej + Congressus",
     "lastVerified": "2026-09-24",
     "status": "KONFLIKT DAT – monitorować",
-    "sourceCategory": "Ortopedia dziecięca / rehabilitacja",
     "dateEnd": "2027-05-22",
     "note": "Strona szczegółowa Congressus: 20–22.05.2027; PTOD i kalendarz Congressus: 13–15.05.2027. Przyjęto nowszą stronę szczegółową, ale data wymaga monitoringu."
   },
@@ -767,10 +665,8 @@
     "dateStart": "2027-06-10",
     "city": "Józefów k. Warszawy",
     "venue": "",
-    "description": "Międzynarodowe sympozjum związane z 77-leciem Kliniki Ortopedii WUM; zapowiedziano m.in. chirurgię biodra, ortopedię onkologiczną, robotykę i nowoczesne technologie.",
+    "description": "Międzynarodowe sympozjum związane z 77-leciem Kliniki Ortopedii WUM. Zapowiedziane tematy obejmują chirurgię biodra, ortopedię onkologiczną, robotykę i technologie medyczne.",
     "url": "https://www.ptoitr2.ptoitr.pl/wydarzenia",
-    "recommended": true,
-    "free": false,
     "tags": [
       "ortopedia",
       "traumatologia",
@@ -779,7 +675,6 @@
     "organizer": "Katedra i Klinika Ortopedii WUM / środowisko PTOiTr",
     "lastVerified": "2026-09-24",
     "status": "Potwierdzone",
-    "sourceCategory": "Ortopedia / traumatologia / technologie",
     "dateEnd": "2027-06-11",
     "note": "Program szczegółowy jeszcze nieopublikowany."
   },
@@ -789,10 +684,8 @@
     "dateStart": "2027-06-25",
     "city": "Gdańsk",
     "venue": "",
-    "description": "Duże wydarzenie poświęcone kolanu, łączące ortopedię, technologię i praktykę kliniczną. Edycja 2026 została przełożona z powodu kolizji lokalizacji z Ukraine Recovery Conference.",
+    "description": "Wydarzenie poświęcone kolanu, łączące ortopedię, technologię i praktykę kliniczną. Edycję 2026 przełożono z powodu kolizji lokalizacji z Ukraine Recovery Conference.",
     "url": "https://aroundtheknee.pl/",
-    "recommended": true,
-    "free": false,
     "tags": [
       "fizjoterapia",
       "ortopedia",
@@ -803,7 +696,6 @@
     "organizer": "Sekcja Chirurgii Kolana PTOiTr + Rehasport",
     "lastVerified": "2026-09-24",
     "status": "Wstępny termin",
-    "sourceCategory": "Ortopedia sportowa / kolano / fizjoterapia",
     "dateEnd": "2027-06-26",
     "note": "Organizator: 25–26.06.2027 jako termin wstępny, ECS Gdańsk. PTOiTr potwierdza datę; miejsce wymaga finalnego potwierdzenia."
   }

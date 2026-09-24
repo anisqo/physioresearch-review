@@ -1,8 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { Conference, ConferenceTopic } from "@/lib/conferences";
-import { conferenceTopics } from "@/lib/conferences";
+import type { Conference } from "@/lib/conferences";
 
 type ConferenceCalendarProps = {
   conferences: Conference[];
@@ -15,8 +14,10 @@ const monthFormatter = new Intl.DateTimeFormat("pl-PL", {
   timeZone: "Europe/Warsaw",
 });
 
-const shortMonthFormatter = new Intl.DateTimeFormat("pl-PL", {
-  month: "short",
+const fullDateFormatter = new Intl.DateTimeFormat("pl-PL", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
   timeZone: "Europe/Warsaw",
 });
 
@@ -31,7 +32,7 @@ function normalizeSearch(value: string) {
     .toLocaleLowerCase("pl");
 }
 
-function dateParts(conference: Conference) {
+function dateLabel(conference: Conference) {
   const start = dateFromIso(conference.dateStart);
   const end = dateFromIso(conference.dateEnd ?? conference.dateStart);
   const sameDay = conference.dateStart === (conference.dateEnd ?? conference.dateStart);
@@ -39,21 +40,17 @@ function dateParts(conference: Conference) {
     start.getUTCFullYear() === end.getUTCFullYear() &&
     start.getUTCMonth() === end.getUTCMonth();
 
-  let day: string;
   if (sameDay) {
-    day = String(start.getUTCDate()).padStart(2, "0");
-  } else if (sameMonth) {
-    day = `${String(start.getUTCDate()).padStart(2, "0")}–${String(
-      end.getUTCDate()
-    ).padStart(2, "0")}`;
-  } else {
-    day = `${start.getUTCDate()} ${shortMonthFormatter.format(start)} – ${end.getUTCDate()} ${shortMonthFormatter.format(end)}`;
+    return fullDateFormatter.format(start);
   }
 
-  return {
-    day,
-    month: monthFormatter.format(start),
-  };
+  if (sameMonth) {
+    return fullDateFormatter
+      .format(start)
+      .replace(/^\d+/, `${start.getUTCDate()}–${end.getUTCDate()}`);
+  }
+
+  return `${fullDateFormatter.format(start)} – ${fullDateFormatter.format(end)}`;
 }
 
 function groupByMonth(items: Conference[]) {
@@ -74,41 +71,31 @@ function groupByMonth(items: Conference[]) {
 }
 
 function ConferenceRow({ conference }: { conference: Conference }) {
-  const date = dateParts(conference);
+  const date = dateLabel(conference);
   const status =
     conference.status && conference.status !== "Potwierdzone"
       ? conference.status
       : null;
 
   return (
-    <article className="grid gap-6 border-t border-[color:var(--line)] py-8 transition-colors hover:bg-white/45 sm:py-9 lg:grid-cols-[9.5rem_minmax(0,1fr)_13rem] lg:gap-10 lg:px-4">
-      <div>
+    <article className="grid gap-6 border-t border-[color:var(--line)] py-8 transition-colors hover:bg-white/45 sm:py-9 lg:grid-cols-[11rem_minmax(0,1fr)_13rem] lg:gap-10 lg:px-4">
+      <div className="pt-1">
         <time
           dateTime={conference.dateStart}
-          className="block font-editorial text-[2.55rem] leading-none tracking-[-0.045em] text-[color:var(--ink)] sm:text-[3rem]"
+          className="block text-[0.95rem] font-medium leading-6 tracking-[0.01em] text-[color:var(--muted)] tabular-nums"
         >
-          {date.day}
+          {date}
         </time>
-        <p className="mt-2 text-[11px] uppercase tracking-[0.18em] text-[color:var(--quiet)]">
-          {date.month}
-        </p>
       </div>
 
       <div className="min-w-0">
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-          {conference.recommended ? (
-            <span className="border-l-2 border-[#006B54] pl-2 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#006B54]">
-              Szczególnie polecamy
-            </span>
-          ) : null}
-          {status ? (
-            <span className="text-[10px] font-semibold uppercase tracking-[0.17em] text-[#8b4b32]">
-              {status}
-            </span>
-          ) : null}
-        </div>
+        {status ? (
+          <p className="text-[10px] font-semibold uppercase tracking-[0.17em] text-[#8b4b32]">
+            {status}
+          </p>
+        ) : null}
 
-        <h3 className="mt-3 max-w-3xl text-[1.35rem] leading-[1.2] tracking-[-0.025em] text-[color:var(--ink)] sm:text-[1.6rem]">
+        <h3 className={`${status ? "mt-3" : ""} max-w-3xl text-[1.35rem] leading-[1.2] tracking-[-0.025em] text-[color:var(--ink)] sm:text-[1.6rem]`}>
           {conference.name}
         </h3>
 
@@ -121,9 +108,6 @@ function ConferenceRow({ conference }: { conference: Conference }) {
           {conference.description}
         </p>
 
-        <p className="mt-4 text-[10px] uppercase tracking-[0.17em] text-[color:var(--quiet)]">
-          {conference.sourceCategory ?? conference.tags.slice(0, 3).join(" / ")}
-        </p>
       </div>
 
       <div className="flex flex-col items-start border-t border-[color:var(--line)] pt-5 lg:border-l lg:border-t-0 lg:pl-6 lg:pt-0">
@@ -155,16 +139,13 @@ function MonthGroups({ items }: { items: Conference[] }) {
     <div className="space-y-14 md:space-y-18">
       {groupByMonth(items).map((group) => (
         <section key={group.key} aria-labelledby={`month-${group.key}`}>
-          <div className="mb-4 flex items-baseline justify-between gap-5">
+          <div className="mb-4">
             <h2
               id={`month-${group.key}`}
-              className="font-editorial text-[1.8rem] capitalize tracking-[-0.025em] text-[color:var(--ink)] sm:text-[2.2rem]"
+              className="text-xl font-medium capitalize tracking-[-0.015em] text-[color:var(--ink)] tabular-nums sm:text-2xl"
             >
               {group.label}
             </h2>
-            <p className="shrink-0 text-[10px] uppercase tracking-[0.19em] text-[color:var(--quiet)]">
-              {group.entries.length} {group.entries.length === 1 ? "wydarzenie" : "wydarzenia"}
-            </p>
           </div>
 
           <div className="border-b border-[color:var(--line)]">
@@ -183,9 +164,6 @@ export function ConferenceCalendar({
   today,
 }: ConferenceCalendarProps) {
   const [query, setQuery] = useState("");
-  const [topic, setTopic] = useState<ConferenceTopic>("all");
-  const [recommendedOnly, setRecommendedOnly] = useState(false);
-  const [freeOnly, setFreeOnly] = useState(false);
   const [showArchive, setShowArchive] = useState(false);
 
   const filtered = useMemo(() => {
@@ -202,14 +180,9 @@ export function ConferenceCalendar({
         ].join(" ")
       );
 
-      return (
-        (!normalizedQuery || searchable.includes(normalizedQuery)) &&
-        (topic === "all" || conference.tags.includes(topic)) &&
-        (!recommendedOnly || conference.recommended) &&
-        (!freeOnly || conference.free)
-      );
+      return !normalizedQuery || searchable.includes(normalizedQuery);
     });
-  }, [conferences, freeOnly, query, recommendedOnly, topic]);
+  }, [conferences, query]);
 
   const upcoming = filtered.filter(
     (conference) => (conference.dateEnd ?? conference.dateStart) >= today
@@ -217,20 +190,10 @@ export function ConferenceCalendar({
   const archived = filtered.filter(
     (conference) => (conference.dateEnd ?? conference.dateStart) < today
   );
-  const hasFilters =
-    query.trim() !== "" || topic !== "all" || recommendedOnly || freeOnly;
-
-  function resetFilters() {
-    setQuery("");
-    setTopic("all");
-    setRecommendedOnly(false);
-    setFreeOnly(false);
-  }
-
   return (
     <>
       <section
-        aria-label="Wyszukiwanie i filtrowanie konferencji"
+        aria-label="Wyszukiwanie konferencji"
         className="border-b border-[color:var(--line)] bg-white"
       >
         <div className="site-shell py-8 md:py-10">
@@ -252,63 +215,9 @@ export function ConferenceCalendar({
               />
             </div>
 
-            <p className="text-sm text-[color:var(--muted)]" aria-live="polite">
+            <p className="text-sm text-[color:var(--muted)] tabular-nums" aria-live="polite">
               {upcoming.length} {upcoming.length === 1 ? "nadchodzące wydarzenie" : "nadchodzących wydarzeń"}
             </p>
-          </div>
-
-          <div className="mt-7 flex flex-wrap gap-2" aria-label="Tematy konferencji">
-            {conferenceTopics.map((filter) => (
-              <button
-                key={filter.value}
-                type="button"
-                aria-pressed={topic === filter.value}
-                onClick={() => setTopic(filter.value)}
-                className={`min-h-11 border px-4 py-2 text-[12px] font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#006B54] ${
-                  topic === filter.value
-                    ? "border-[color:var(--ink)] bg-[color:var(--ink)] text-white"
-                    : "border-black/15 bg-white text-[color:var(--ink)] hover:border-[#006B54] hover:text-[#006B54]"
-                }`}
-              >
-                {filter.label}
-              </button>
-            ))}
-          </div>
-
-          <div className="mt-3 flex flex-wrap gap-2">
-            <button
-              type="button"
-              aria-pressed={recommendedOnly}
-              onClick={() => setRecommendedOnly((value) => !value)}
-              className={`min-h-11 border px-4 py-2 text-[12px] font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#006B54] ${
-                recommendedOnly
-                  ? "border-[#006B54] bg-[#006B54] text-white"
-                  : "border-black/15 bg-white text-[color:var(--ink)] hover:border-[#006B54] hover:text-[#006B54]"
-              }`}
-            >
-              Szczególnie polecane
-            </button>
-            <button
-              type="button"
-              aria-pressed={freeOnly}
-              onClick={() => setFreeOnly((value) => !value)}
-              className={`min-h-11 border px-4 py-2 text-[12px] font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#006B54] ${
-                freeOnly
-                  ? "border-[#006B54] bg-[#006B54] text-white"
-                  : "border-black/15 bg-white text-[color:var(--ink)] hover:border-[#006B54] hover:text-[#006B54]"
-              }`}
-            >
-              Bezpłatne
-            </button>
-            {hasFilters ? (
-              <button
-                type="button"
-                onClick={resetFilters}
-                className="min-h-11 px-3 py-2 text-[12px] font-medium text-[color:var(--muted)] underline decoration-black/25 underline-offset-4 hover:text-[color:var(--ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#006B54]"
-              >
-                Wyczyść filtry
-              </button>
-            ) : null}
           </div>
         </div>
       </section>
@@ -323,7 +232,7 @@ export function ConferenceCalendar({
                 Brak wydarzeń spełniających kryteria
               </h2>
               <p className="mx-auto mt-3 max-w-xl leading-7 text-[color:var(--muted)]">
-                Zmień wyszukiwaną frazę albo wyłącz część filtrów.
+                Zmień wyszukiwaną frazę.
               </p>
             </div>
           )}

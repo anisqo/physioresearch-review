@@ -107,32 +107,21 @@ export default function ConferenceCalendarPage() {
         />
 
         <div className="site-shell relative z-10">
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_15rem] lg:items-end">
-            <div>
-              <p className="text-[10px] uppercase tracking-[0.24em] text-[color:var(--quiet)]">
-                Kalendarz konferencji
-              </p>
-              <h1 className="mt-5 max-w-4xl font-editorial text-[clamp(2.45rem,5.8vw,5rem)] leading-[0.95] tracking-[-0.045em] text-[color:var(--ink)]">
-                Konferencje warte uwagi.
-              </h1>
-              <p className="mt-6 max-w-3xl text-base leading-8 text-[color:var(--muted)] md:text-lg">
-                Konferencje, kongresy i sympozja związane z fizjoterapią,
-                ortopedią, rehabilitacją i medycyną sportową. Regularnie
-                aktualizowany wybór wydarzeń odbywających się w Polsce.
-              </p>
-            </div>
-
-            <div className="border-l border-black/15 pl-5">
-              <p className="font-editorial text-4xl tracking-[-0.04em] text-[#006B54]">
-                {conferences.length}
-              </p>
-              <p className="mt-1 text-[10px] uppercase tracking-[0.2em] text-[color:var(--quiet)]">
-                wydarzeń w bazie
-              </p>
-              <p className="mt-5 text-xs leading-5 text-[color:var(--muted)]">
-                Dane zweryfikowane: {polishDate(lastVerified)}
-              </p>
-            </div>
+          <div>
+            <p className="text-[10px] uppercase tracking-[0.24em] text-[color:var(--quiet)]">
+              Kalendarz konferencji
+            </p>
+            <h1 className="mt-5 max-w-4xl font-editorial text-[clamp(2.45rem,5.8vw,5rem)] leading-[0.95] tracking-[-0.045em] text-[color:var(--ink)]">
+              Nadchodzące konferencje.
+            </h1>
+            <p className="mt-6 max-w-3xl text-base leading-8 text-[color:var(--muted)] md:text-lg">
+              Lista konferencji, kongresów i sympozjów związanych z
+              fizjoterapią, ortopedią, rehabilitacją i medycyną sportową,
+              odbywających się w Polsce.
+            </p>
+            <p className="mt-5 text-xs leading-5 text-[color:var(--quiet)] tabular-nums">
+              Ostatnia weryfikacja danych: {polishDate(lastVerified)}
+            </p>
           </div>
         </div>
       </header>
