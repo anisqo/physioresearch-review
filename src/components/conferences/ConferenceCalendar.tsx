@@ -78,7 +78,7 @@ function ConferenceRow({ conference }: { conference: Conference }) {
       : null;
 
   return (
-    <article className="grid gap-6 border-t border-[color:var(--line)] py-8 transition-colors hover:bg-white/45 sm:py-9 lg:grid-cols-[11rem_minmax(0,1fr)_13rem] lg:gap-10 lg:px-4">
+    <article className="grid gap-6 border-t border-[color:var(--line)] px-4 py-8 transition-colors odd:bg-white/40 even:bg-[#eaf0ed] hover:bg-[#dfe9e4] sm:px-5 sm:py-9 lg:grid-cols-[11rem_minmax(0,1fr)_13rem] lg:gap-10 lg:px-4">
       <div className="pt-1">
         <time
           dateTime={conference.dateStart}
