@@ -81,7 +81,7 @@ export default function ConferenceCalendarPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#f8f7f3]">
+    <main className="min-h-screen bg-[#f4f2ed]">
       <SiteHeader />
 
       <script
@@ -91,36 +91,83 @@ export default function ConferenceCalendarPage() {
         }}
       />
 
-      <header className="relative overflow-hidden border-b border-[color:var(--line)] bg-[#efebe4] py-12 md:py-16">
+      <header className="relative overflow-hidden bg-[#102523] pb-24 pt-14 text-white md:pb-28 md:pt-20 lg:pb-32 lg:pt-24">
         <div
-          className="pointer-events-none absolute inset-0 opacity-55"
+          className="pointer-events-none absolute inset-0 opacity-30"
           aria-hidden="true"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(17,17,17,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(17,17,17,0.05) 1px, transparent 1px)",
-            backgroundSize: "38px 38px",
+              "linear-gradient(rgba(214,235,226,0.11) 1px, transparent 1px), linear-gradient(90deg, rgba(214,235,226,0.11) 1px, transparent 1px)",
+            backgroundSize: "44px 44px",
             maskImage:
-              "linear-gradient(90deg, black 0%, rgba(0,0,0,0.45) 62%, transparent 100%)",
+              "linear-gradient(90deg, black 0%, rgba(0,0,0,0.7) 65%, transparent 100%)",
             WebkitMaskImage:
-              "linear-gradient(90deg, black 0%, rgba(0,0,0,0.45) 62%, transparent 100%)",
+              "linear-gradient(90deg, black 0%, rgba(0,0,0,0.7) 65%, transparent 100%)",
           }}
         />
 
-        <div className="site-shell relative z-10">
-          <div>
-            <p className="text-[10px] uppercase tracking-[0.24em] text-[color:var(--quiet)]">
+        <div
+          className="pointer-events-none absolute -right-36 -top-44 h-[560px] w-[560px] rounded-full border border-[#b7dacd]/15 md:-right-16 md:-top-40 lg:right-4 lg:top-[-13rem] lg:h-[660px] lg:w-[660px]"
+          aria-hidden="true"
+        />
+        <div
+          className="pointer-events-none absolute -right-16 top-16 h-[330px] w-[470px] rotate-[-14deg] rounded-[50%] border border-[#b7dacd]/10 md:right-8 lg:right-20 lg:top-12 lg:h-[390px] lg:w-[570px]"
+          aria-hidden="true"
+        />
+
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 680 360"
+          className="conference-hero-art pointer-events-none absolute bottom-0 right-[-11rem] hidden h-[90%] w-[62%] opacity-80 md:block lg:right-[-4rem] lg:w-[54%]"
+          fill="none"
+        >
+          <path
+            d="M18 289C104 260 112 176 201 201C286 225 290 83 384 113C462 138 490 59 654 34"
+            stroke="rgba(173, 219, 202, 0.42)"
+            strokeWidth="2"
+          />
+          <path
+            d="M14 318C126 279 174 308 242 236C311 163 376 226 437 154C498 82 561 94 666 73"
+            stroke="rgba(255, 255, 255, 0.16)"
+            strokeWidth="1"
+            strokeDasharray="7 10"
+          />
+          <path
+            d="M196 202L196 340M383 113L383 340M546 73L546 340"
+            stroke="rgba(255, 255, 255, 0.08)"
+            strokeWidth="1"
+          />
+          <circle cx="201" cy="201" r="5" fill="#9ccfbd" />
+          <circle cx="384" cy="113" r="5" fill="#9ccfbd" />
+          <circle cx="546" cy="73" r="5" fill="#9ccfbd" />
+        </svg>
+
+        <div className="site-shell relative z-10 grid items-end gap-12 lg:grid-cols-[minmax(0,1fr)_20rem]">
+          <div className="conference-hero-copy">
+            <p className="text-[10px] uppercase tracking-[0.26em] text-[#9ccfbd]">
               Kalendarz konferencji
             </p>
-            <h1 className="mt-5 max-w-4xl font-editorial text-[clamp(2.45rem,5.8vw,5rem)] leading-[0.95] tracking-[-0.045em] text-[color:var(--ink)]">
-              Nadchodzące konferencje.
+            <h1 className="mt-5 max-w-4xl font-editorial text-[clamp(3rem,6.4vw,5.8rem)] leading-[0.9] tracking-[-0.05em] text-white">
+              <span className="block">Nadchodzące</span>
+              <span className="block text-[#a8d6c5]">konferencje.</span>
             </h1>
-            <p className="mt-6 max-w-3xl text-base leading-8 text-[color:var(--muted)] md:text-lg">
+            <p className="mt-7 max-w-2xl text-base leading-8 text-white/70 md:text-lg">
               Lista konferencji, kongresów i sympozjów związanych z
               fizjoterapią, ortopedią, rehabilitacją i medycyną sportową,
               odbywających się w Polsce.
             </p>
-            <p className="mt-5 text-xs leading-5 text-[color:var(--quiet)] tabular-nums">
+            <p className="mt-6 text-xs leading-5 text-white/45 tabular-nums">
               Ostatnia weryfikacja danych: {polishDate(lastVerified)}
+            </p>
+          </div>
+
+          <div className="conference-hero-copy hidden border-l border-white/15 pl-7 lg:block">
+            <p className="text-[10px] uppercase tracking-[0.24em] text-[#9ccfbd]">
+              Indeks wydarzeń
+            </p>
+            <p className="mt-4 max-w-[17rem] text-sm leading-7 text-white/55">
+              Terminy, lokalizacje i informacje organizacyjne w jednym,
+              uporządkowanym miejscu.
             </p>
           </div>
         </div>

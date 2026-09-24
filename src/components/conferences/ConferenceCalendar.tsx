@@ -78,11 +78,11 @@ function ConferenceRow({ conference }: { conference: Conference }) {
       : null;
 
   return (
-    <article className="grid gap-6 border-t border-[color:var(--line)] px-4 py-8 transition-colors odd:bg-white/40 even:bg-[#eaf0ed] hover:bg-[#dfe9e4] sm:px-5 sm:py-9 lg:grid-cols-[11rem_minmax(0,1fr)_13rem] lg:gap-10 lg:px-4">
-      <div className="pt-1">
+    <article className="grid gap-6 border-t border-[#cfd7d2] px-4 py-8 transition-colors duration-300 odd:bg-white/55 even:bg-[#e4ece8] hover:bg-[#d8e5df] sm:px-5 sm:py-9 lg:grid-cols-[11rem_minmax(0,1fr)_13rem] lg:gap-10 lg:px-5">
+      <div className="border-l border-[#729487]/60 pl-4 pt-1 lg:border-l-0 lg:border-r lg:pl-0 lg:pr-7">
         <time
           dateTime={conference.dateStart}
-          className="block text-[0.95rem] font-medium leading-6 tracking-[0.01em] text-[color:var(--muted)] tabular-nums"
+          className="block text-[0.95rem] font-medium leading-6 tracking-[0.01em] text-[#345e50] tabular-nums"
         >
           {date}
         </time>
@@ -110,7 +110,7 @@ function ConferenceRow({ conference }: { conference: Conference }) {
 
       </div>
 
-      <div className="flex flex-col items-start border-t border-[color:var(--line)] pt-5 lg:border-l lg:border-t-0 lg:pl-6 lg:pt-0">
+      <div className="flex flex-col items-start border-t border-[#bfcac4] pt-5 lg:border-l lg:border-t-0 lg:pl-6 lg:pt-0">
         {conference.price ? (
           <div>
             <p className="text-[10px] uppercase tracking-[0.2em] text-[color:var(--quiet)]">
@@ -128,7 +128,10 @@ function ConferenceRow({ conference }: { conference: Conference }) {
           rel="noopener noreferrer"
           className="mt-5 inline-flex min-h-11 items-center border-b border-[#006B54] text-sm font-semibold text-[#006B54] transition-colors hover:border-[color:var(--ink)] hover:text-[color:var(--ink)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#006B54] lg:mt-auto"
         >
-          Strona konferencji
+          <span>Strona konferencji</span>
+          <span aria-hidden="true" className="ml-2 text-base font-normal">
+            ↗
+          </span>
         </a>
       </div>
     </article>
@@ -138,17 +141,24 @@ function MonthGroups({ items }: { items: Conference[] }) {
   return (
     <div className="space-y-14 md:space-y-18">
       {groupByMonth(items).map((group) => (
-        <section key={group.key} aria-labelledby={`month-${group.key}`}>
-          <div className="mb-4">
-            <h2
-              id={`month-${group.key}`}
-              className="text-xl font-medium capitalize tracking-[-0.015em] text-[color:var(--ink)] tabular-nums sm:text-2xl"
-            >
-              {group.label}
-            </h2>
+        <section
+          key={group.key}
+          aria-labelledby={`month-${group.key}`}
+          className="conference-month"
+        >
+          <div className="mb-3 border-y border-[#aebfb7] bg-[#dbe6e0] px-4 py-4 sm:px-5">
+            <div className="flex items-center gap-3">
+              <span className="h-px w-8 bg-[#457262]" aria-hidden="true" />
+              <h2
+                id={`month-${group.key}`}
+                className="text-base font-semibold capitalize tracking-[0.02em] text-[#173d34] tabular-nums sm:text-lg"
+              >
+                {group.label}
+              </h2>
+            </div>
           </div>
 
-          <div className="border-b border-[color:var(--line)]">
+          <div className="border-b border-[#c3cec8]">
             {group.entries.map((conference) => (
               <ConferenceRow key={conference.id} conference={conference} />
             ))}
@@ -194,9 +204,10 @@ export function ConferenceCalendar({
     <>
       <section
         aria-label="Wyszukiwanie konferencji"
-        className="border-b border-[color:var(--line)] bg-white"
+        className="relative z-20 -mt-10 bg-transparent"
       >
-        <div className="site-shell py-8 md:py-10">
+        <div className="site-shell">
+          <div className="conference-search-panel border border-[#c7d1cc] bg-[#fbfaf7]/95 px-5 py-7 shadow-[0_22px_60px_rgba(18,45,39,0.13)] backdrop-blur-sm sm:px-7 md:px-9 md:py-8">
           <div className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
             <div>
               <label
@@ -219,11 +230,20 @@ export function ConferenceCalendar({
               {upcoming.length} {upcoming.length === 1 ? "nadchodzące wydarzenie" : "nadchodzących wydarzeń"}
             </p>
           </div>
+          </div>
         </div>
       </section>
 
-      <section className="py-12 md:py-16 lg:py-20">
-        <div className="site-shell">
+      <section className="relative overflow-hidden pb-12 pt-14 md:pb-16 md:pt-18 lg:pb-20 lg:pt-22">
+        <div
+          className="pointer-events-none absolute inset-0 opacity-40"
+          aria-hidden="true"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 8% 8%, rgba(80, 124, 107, 0.12), transparent 24rem), radial-gradient(circle at 92% 48%, rgba(135, 111, 64, 0.07), transparent 28rem)",
+          }}
+        />
+        <div className="site-shell relative z-10">
           {upcoming.length > 0 ? (
             <MonthGroups items={upcoming} />
           ) : (

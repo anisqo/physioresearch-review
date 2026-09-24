@@ -76,3 +76,61 @@ svg {
     width: min(100% - 28px, 1180px);
   }
 }
+
+@keyframes conference-hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes conference-graph-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-10px, -5px, 0);
+  }
+}
+
+@keyframes conference-section-in {
+  from {
+    opacity: 0.35;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .conference-hero-copy {
+    animation: conference-hero-rise 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .conference-hero-copy:nth-child(2) {
+    animation-delay: 120ms;
+  }
+
+  .conference-search-panel {
+    animation: conference-hero-rise 650ms 150ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .conference-hero-art {
+    animation: conference-graph-drift 14s ease-in-out infinite;
+  }
+
+  @supports (animation-timeline: view()) {
+    .conference-month {
+      animation: conference-section-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 22%;
+    }
+  }
+}
