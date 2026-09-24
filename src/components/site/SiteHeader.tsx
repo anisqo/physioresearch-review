@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { home } from "@/data/home";
 
@@ -17,7 +18,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-black/10 bg-white">
       <div className="site-shell flex h-[84px] items-center justify-between md:h-[104px] lg:h-[136px]">
-        <a
+        <Link
           href="/"
           className="group flex max-w-[calc(100%-96px)] min-w-0 flex-1 items-center gap-2 sm:max-w-none md:gap-3"
           aria-label="Physio Research Review — strona główna"
@@ -33,14 +34,14 @@ export function SiteHeader() {
               Physio Research Review
             </span>
           </div>
-        </a>
+        </Link>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-5 xl:flex">
           {regularLinks.map((item) => (
             <a
               key={item.label}
               href={item.href}
-              className="group relative py-2 text-[13px] font-medium tracking-[0.02em] text-neutral-800 transition-colors hover:text-[#006B54]"
+              className="group relative py-2 text-[12px] font-medium tracking-[0.015em] text-neutral-800 transition-colors hover:text-[#006B54]"
             >
               {item.label}
               <span className="absolute bottom-0 left-0 h-px w-0 bg-[#006B54] transition-all duration-300 group-hover:w-full" />
@@ -50,7 +51,7 @@ export function SiteHeader() {
           {contactLink ? (
             <a
               href={contactLink.href}
-              className="border border-black/15 px-4 py-2 text-[13px] font-medium tracking-[0.02em] text-neutral-800 transition-colors hover:border-[#006B54] hover:text-[#006B54]"
+              className="border border-black/15 px-4 py-2 text-[12px] font-medium tracking-[0.015em] text-neutral-800 transition-colors hover:border-[#006B54] hover:text-[#006B54]"
             >
               {contactLink.label}
             </a>
@@ -60,7 +61,7 @@ export function SiteHeader() {
         <button
           type="button"
           onClick={() => setMobileOpen((value) => !value)}
-          className="ml-2 min-w-[88px] shrink-0 border border-black/15 px-2.5 py-2 text-center text-[10px] uppercase tracking-[0.16em] text-neutral-800 transition-colors hover:border-[#006B54] hover:text-[#006B54] sm:ml-3 sm:px-4 sm:text-[12px] sm:tracking-[0.22em] lg:hidden"
+          className="ml-2 min-w-[88px] shrink-0 border border-black/15 px-2.5 py-2 text-center text-[10px] uppercase tracking-[0.16em] text-neutral-800 transition-colors hover:border-[#006B54] hover:text-[#006B54] sm:ml-3 sm:px-4 sm:text-[12px] sm:tracking-[0.22em] xl:hidden"
           aria-expanded={mobileOpen}
           aria-controls="mobile-navigation"
         >
@@ -71,7 +72,7 @@ export function SiteHeader() {
       {mobileOpen ? (
         <div
           id="mobile-navigation"
-          className="border-t border-black/10 bg-white lg:hidden"
+          className="border-t border-black/10 bg-white xl:hidden"
         >
           <nav className="site-shell py-5">
             <div className="grid gap-0 border-y border-black/10">

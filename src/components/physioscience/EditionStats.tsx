@@ -40,7 +40,6 @@ function useCountUp(target: number, startAnimation: boolean, duration = 1300) {
 
   useEffect(() => {
     if (!startAnimation || target === 0) {
-      if (target === 0) setValue(0);
       return;
     }
 

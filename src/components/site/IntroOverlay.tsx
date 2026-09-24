@@ -23,17 +23,21 @@ export function IntroOverlay() {
     ).matches;
 
     if (alreadySeen || prefersReducedMotion) {
-      setVisible(false);
       return;
     }
 
-    setVisible(true);
+    const showFrame = window.requestAnimationFrame(() => {
+      setVisible(true);
+    });
 
     const fallbackTimer = window.setTimeout(() => {
       closeIntro();
     }, 14000);
 
-    return () => window.clearTimeout(fallbackTimer);
+    return () => {
+      window.cancelAnimationFrame(showFrame);
+      window.clearTimeout(fallbackTimer);
+    };
   }, []);
 
   if (!visible) return null;

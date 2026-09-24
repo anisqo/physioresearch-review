@@ -82,6 +82,7 @@ export const home = {
     { label: "Zespół", href: "/#zespol" },
     { label: "Publikacje", href: "/publikacje" },
     { label: "Konferencje", href: "/konferencje" },
+    { label: "Kalendarz konferencji", href: "/kalendarz" },
     { label: "Galeria", href: "/galeria" },
     { label: "PhysioScience", href: "/physioscience" },
     { label: "Kontakt", href: "/kontakt" },
